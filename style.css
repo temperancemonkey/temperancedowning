@@ -115,6 +115,18 @@ body{
     color: black;
 }
 
+#ancientfuture{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    text-decoration: none;
+    color: grey;
+}
+
+#ancientfuture:hover{
+    color: black;
+}
+
 
 
 
