@@ -103,6 +103,19 @@ body{
     color: black;
 }
 
+#randomposters{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    text-decoration: none;
+    color: grey;
+}
+
+#randomposters:hover{
+    color: black;
+}
+
+
 
 
 
