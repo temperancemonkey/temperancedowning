@@ -127,6 +127,15 @@ body{
     color: black;
 }
 
+.instagram{
+    position: absolute;
+    width: 2%;
+    height: auto;
+    bottom: 5%;
+    left: 95%;
+}
+
+
 
 
 
