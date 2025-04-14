@@ -3,25 +3,23 @@ body{
     width: 100%; */
     font-family: "Space Mono", serif;
     overflow: hidden;
+    display: flex;
 }
 
 
 .favicon{
     position: fixed;
-    display: inline-flex;
-    justify-content: left;
-    align-items: left;
-    margin-left: 20px;
-    height: 50px;
+    top: 2vw;
+    left: 2vw;
+    height: 30px;
 }
 
 
 .header{
-    position: absolute;
-    display: flex;
-    font-size: 20px;
-    margin: 10px;
-    left: 5%;
+    position: fixed;
+    font-size: 15px;
+    top: 2.1vw;
+    left: 5vw;
 }
 
 .about{
