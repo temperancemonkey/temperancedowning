@@ -24,7 +24,11 @@ img{
 }
 
 
-
+.resume{
+    position: absolute;
+    left: 2vw;
+    bottom: 2vw;
+}
 
 
 
