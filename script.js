@@ -18,12 +18,8 @@ buttons.forEach(button => {
 
       const previewImg = document.createElement('img');
       previewImg.src = img.src;
-    //   previewImg.style.maxWidth = '90%';
-    //   previewImg.style.maxHeight = '90%';
       previewImg.style.width = 'auto';
       previewImg.style.height = '90vh';
-    //   previewImg.style.boxShadow = '0 0 20px black';
-    //   previewImg.style.border = '5px solid white';
 
       overlay.appendChild(previewImg);
       document.body.appendChild(overlay);

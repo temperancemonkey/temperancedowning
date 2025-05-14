@@ -17,11 +17,14 @@ button{
 img{
     display: flex;
     float: left;
-    height: 100px;
+    height: 90px;
     width: auto;
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 
 
