@@ -3,135 +3,26 @@ body{
     width: 100%; */
     font-family: "Space Mono", serif;
     overflow: hidden;
+}
+
+button{
     display: flex;
+    float: left;
+    background-color: transparent;
+    border: transparent;
+    justify-content: center;
+    align-items: center; 
 }
 
-
-.favicon{
-    position: fixed;
-    top: 2vw;
-    left: 2vw;
-    height: 30px;
+img{
+    display: flex;
+    float: left;
+    height: 100px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.header{
-    position: fixed;
-    font-size: 15px;
-    top: 2.1vw;
-    left: 5vw;
-}
-
-.about{
-    position: absolute;
-    left: 2%;
-    top: 90%;
-    
-}
-
-#pictotype{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#pictotype:hover{
-    color: black;
-}
-
-#mothmouth{
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#mothmouth:hover{
-    color: black;
-}
-
-#hallucinatory_beauty{
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#hallucinatory_beauty:hover{
-    color: black;
-}
-
-#monstertype{
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#monstertype:hover{
-    color: black;
-}
-
-#firstthingsfirst{
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#firstthingsfirst:hover{
-    color: black;
-}
-
-#Positive_Negative{
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#Positive_Negative:hover{
-    color: black;
-}
-
-#randomposters{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#randomposters:hover{
-    color: black;
-}
-
-#ancientfuture{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    text-decoration: none;
-    color: grey;
-}
-
-#ancientfuture:hover{
-    color: black;
-}
-
-.instagram{
-    position: absolute;
-    width: 2%;
-    height: auto;
-    bottom: 5%;
-    left: 95%;
-}
 
 
 
