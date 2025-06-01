@@ -62,45 +62,44 @@ works.forEach(work => {
   const img = work.querySelector('img');
   if (img) {
     img.addEventListener('click', () => {
-      // Create overlay and preview image
-      const overlay = document.createElement('div');
-      overlay.style.position = 'fixed';
-      overlay.style.top = 0;
-      overlay.style.left = 0;
-      overlay.style.width = '100vw';
-      overlay.style.height = '100vh';
-      overlay.style.background = 'rgba(0, 0, 0, 0.8)';
-      overlay.style.display = 'flex';
-      overlay.style.justifyContent = 'center';
-      overlay.style.alignItems = 'center';
-      overlay.style.zIndex = 1000;
-
-      const previewImg = document.createElement('img');
-      previewImg.src = img.src;
-      previewImg.style.width = '50vw';  // BIGGER WIDTH
-      previewImg.style.height = 'auto'; // Keep aspect ratio
-
-
-
-      overlay.appendChild(previewImg);
-      document.body.appendChild(overlay);
-
-      // Close on click outside image
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-          document.body.removeChild(overlay);
-        }
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = 0;
+        overlay.style.left = 0;
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
+        overlay.style.background = 'rgba(0, 0, 0, 0.8)';
+        overlay.style.display = 'flex';
+        overlay.style.justifyContent = 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.zIndex = 1000;
+      
+        const previewImg = document.createElement('img');
+        previewImg.src = img.src;
+        previewImg.style.maxWidth = '90vw';
+        previewImg.style.maxHeight = '90vh';
+        previewImg.style.width = 'auto';
+        previewImg.style.height = 'auto';
+      
+        overlay.appendChild(previewImg);
+        document.body.appendChild(overlay);
+      
+        overlay.addEventListener('click', e => {
+          if (e.target === overlay) {
+            document.body.removeChild(overlay);
+          }
+        });
+      
+        const closeOnEsc = e => {
+          if (e.key === 'Escape') {
+            document.body.removeChild(overlay);
+            document.removeEventListener('keydown', closeOnEsc);
+          }
+        };
+      
+        document.addEventListener('keydown', closeOnEsc);
       });
-
-      // Close on "Escape" key
-      const closeOnEsc = (e) => {
-        if (e.key === 'Escape') {
-          document.body.removeChild(overlay);
-          document.removeEventListener('keydown', closeOnEsc);
-        }
-      };
-      document.addEventListener('keydown', closeOnEsc);
-    });
+      
   }
 });
 
