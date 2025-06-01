@@ -1,3 +1,56 @@
+// const elements = document.getElementsByClassName('work');
+
+// function randomlyPlaceImages() {
+//     const containerWidth = window.innerWidth;
+//     const containerHeight = window.innerHeight;
+
+//     for (let i = 0; i < elements.length; i++) {
+//         const el = elements[i];
+//         const randomX = Math.random() * (containerWidth - el.offsetWidth);
+//         const randomY = Math.random() * (containerHeight - el.offsetHeight);
+//         el.style.left = `${randomX}px`;
+//         el.style.top = `${randomY}px`;
+//     }
+// }
+
+// randomlyPlaceImages();
+// window.addEventListener('resize', randomlyPlaceImages);
+
+const elements = document.getElementsByClassName('work');
+
+function randomlyPlaceImagesNearCenter() {
+    const screenW = window.innerWidth;
+    const screenH = window.innerHeight;
+
+    const centerX = screenW / 2;
+    const centerY = screenH / 2;
+
+    const maxOffsetX = screenW * 0.25; // 25% of screen width
+    const maxOffsetY = screenH * 0.25; // 25% of screen height
+
+    for (let i = 0; i < elements.length; i++) {
+        const el = elements[i];
+        const elW = el.offsetWidth || 100;
+        const elH = el.offsetHeight || 100;
+
+        // Random offset near center, within safe range
+        const offsetX = (Math.random() - 0.5) * 2 * maxOffsetX;
+        const offsetY = (Math.random() - 0.5) * 2 * maxOffsetY;
+
+        // Calculate final position
+        const left = centerX + offsetX - elW / 2;
+        const top = centerY + offsetY - elH / 2;
+
+        // Clamp to stay inside viewport
+        el.style.left = `${Math.max(0, Math.min(left, screenW - elW))}px`;
+        el.style.top = `${Math.max(0, Math.min(top, screenH - elH))}px`;
+    }
+}
+
+window.onload = randomlyPlaceImagesNearCenter;
+window.addEventListener('resize', randomlyPlaceImagesNearCenter);
+
+
 
 
 

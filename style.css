@@ -1,11 +1,16 @@
 body{
-    margin: 0;
     overflow: hidden;
     font-family: "Space Mono", serif;
 }
 
 .container{
-    display: flex;
+   position: relative;
+   width: 100vw;
+  height: 100vh;
+}
+
+.work{
+    position: absolute;
 }
 
 img{
@@ -17,7 +22,7 @@ img{
 }
 
 .resume{
-    position: absolute;
+    position: fixed;
     right: 2vw;
    top: 2vw;
 }
