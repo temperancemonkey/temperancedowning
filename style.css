@@ -1,38 +1,31 @@
 body{
-    font-family: "Space Mono", serif;
+    margin: 0;
     overflow: hidden;
+    font-family: "Space Mono", serif;
 }
 
-button{
+.container{
     display: flex;
-    float: left;
-    background-color: transparent;
-    border: transparent;
-    justify-content: center;
-    align-items: center; 
 }
+
+
 
 img{
-    display: flex;
-    float: left;
-    height: 81px;
-    width: auto;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 10vw;
+    height: auto;
 }
 
 
 .resume{
     position: absolute;
-    left: 2vw;
-    bottom: 2vw;
+    right: 2vw;
+   top: 2vw;
 }
 
-.wip{
-    position: absolute;
-    left: 2vw;
-    bottom: 2vw;
-}
+
+
+  
 
 
 
