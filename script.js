@@ -7,8 +7,8 @@ function randomlyPlaceImagesNearCenterWithoutOverlap() {
   const centerX = screenW / 2;
   const centerY = screenH / 2;
 
-  const maxOffsetX = screenW * 0.30;
-  const maxOffsetY = screenH * 0.30;
+  const maxOffsetX = screenW * 0.25;
+  const maxOffsetY = screenH * 0.25;
 
   const placedRects = [];
   const buffer = 50; // bigger buffer
@@ -57,7 +57,10 @@ window.addEventListener('resize', () => {
   setTimeout(randomlyPlaceImagesNearCenterWithoutOverlap, 200);
 });
 
-// preview on click
+
+
+
+// PREVIEW IMAGE
 const works = document.querySelectorAll('.work');
 
 works.forEach(work => {
