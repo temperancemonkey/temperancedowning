@@ -1,3 +1,11 @@
+
+
+
+
+
+
+// RANDOM PLACEMENT
+
 const elements = document.getElementsByClassName('work');
 
 function randomlyPlaceImagesNearCenterWithoutOverlap() {
