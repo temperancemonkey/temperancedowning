@@ -32,7 +32,7 @@ function randomlyPlaceImagesNearCenterWithoutOverlap() {
   const centerY = screenH / 2;
 
   const maxOffsetX = screenW * 0.35;
-  const maxOffsetY = screenH * 0.35;
+  const maxOffsetY = screenH * 0.25;
 
   const placedRects = [];
   const buffer = 50; // bigger buffer
