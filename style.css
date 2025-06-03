@@ -144,9 +144,18 @@ img{
 
 
 
+
 .resume{
     position: fixed;
     right: 2vw;
+   top: 2vw;
+   text-decoration: none;
+   color: crimson;
+}
+
+.arena{
+    position: fixed;
+    right: 15vw;
    top: 2vw;
    text-decoration: none;
    color: crimson;
@@ -156,16 +165,15 @@ img{
     border: none;
     font-family: "Space Mono", serif;
     color: crimson;
-    font-size: 15px;
+    font-size: 16px;
     background-color: transparent;
   }
   
   .dropdown {
     position: fixed;
-    top: -.3vw;
-    right: 7vw;
+    top: 2vw;
+    right: 8.5vw;
     display: inline-block;
-    margin: 35px;
     
   }
   
