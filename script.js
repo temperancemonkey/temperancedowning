@@ -20,9 +20,6 @@
 
 
 
-
-
-
 // RANDOM PLACEMENT
 
 const elements = document.getElementsByClassName('work');
@@ -78,6 +75,8 @@ function randomlyPlaceImagesNearCenterWithoutOverlap() {
     placedRects.push({ left, top, width: elW, height: elH });
   }
 }
+
+
 
 window.onload = randomlyPlaceImagesNearCenterWithoutOverlap;
 window.addEventListener('resize', () => {
