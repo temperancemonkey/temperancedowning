@@ -95,7 +95,7 @@ body{
 .one{
     transform-style: preserve-3d;
     perspective: 1000px;
-    transform: rotateY(35deg) rotateX(10deg) scale(1.05);
+    transform: rotateY(35deg) rotateX(10deg) rotateZ(-4deg) scale(1.05);
 }
 
 .two{
@@ -120,7 +120,7 @@ body{
 .five{
     transform-style: preserve-3d;
     perspective: 1000px;
-    transform: rotateY(-8deg) rotateX(4deg) rotateZ(-8deg) scale(1.05);
+    transform: rotateY(-8deg) rotateX(4deg) rotateZ(-25deg) scale(1.05);
 }
 
 .six{
@@ -132,7 +132,7 @@ body{
 .seven{
     transform-style: preserve-3d;
     perspective: 1000px;
-    transform: rotateY(-75deg) rotateX(4deg) rotateZ(-90deg) scale(1.05);
+    transform: rotateY(-45deg) rotateX(4deg) rotateZ(-90deg) scale(1.05);
 }
 
 img{
@@ -148,6 +148,49 @@ img{
     position: fixed;
     right: 2vw;
    top: 2vw;
+   text-decoration: none;
+   color: crimson;
+}
+
+.dropbtn {
+    border: none;
+    font-family: "Space Mono", serif;
+    color: crimson;
+    font-size: 15px;
+    background-color: transparent;
+  }
+  
+  .dropdown {
+    position: fixed;
+    top: -.3vw;
+    right: 7vw;
+    display: inline-block;
+    margin: 35px;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    color: crimson;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+p{
+    position: fixed;
+    color: crimson; 
+    top: 1vw;
+    left: 2vw;
 }
 
 
