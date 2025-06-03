@@ -86,7 +86,7 @@ body{
   }
 
 .work:hover {
-    transform: rotateY(8deg) rotateX(4deg) scale(1.05);
+    transform: scale(1.05);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
     z-index: 10;
     background-color: white;
