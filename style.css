@@ -153,12 +153,20 @@ img{
    color: crimson;
 }
 
+.resume:hover{
+    color: blue;
+}
+
 .arena{
     position: fixed;
     right: 15vw;
    top: 2vw;
    text-decoration: none;
    color: crimson;
+}
+
+.arena:hover{
+    color: blue;
 }
 
 .dropbtn {
@@ -168,6 +176,12 @@ img{
     font-size: 16px;
     background-color: transparent;
   }
+
+  .dropbtn:hover{
+    color: blue;
+  }
+
+  
   
   .dropdown {
     position: fixed;
@@ -176,6 +190,9 @@ img{
     display: inline-block;
     
   }
+
+  
+
   
   .dropdown-content {
     display: none;
