@@ -153,12 +153,7 @@ body{
     transform: rotateY(-15deg) rotateX(4deg) rotateZ(45deg) scale(1.05);
 }
 
-.eleven{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(45deg) rotateX(4deg) rotateZ(45deg) scale(1.05);
-    background-color: white;
-}
+
 
 
 
