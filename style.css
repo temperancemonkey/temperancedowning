@@ -121,7 +121,7 @@ body{
 .five{
     transform-style: preserve-3d;
     perspective: 1000px;
-    transform: rotateY(-8deg) rotateX(4deg) rotateZ(-25deg) scale(1.05);
+    transform: rotateY(-18deg) rotateX(55deg) rotateZ(-25deg) scale(1.05);
 }
 
 .six{
@@ -151,7 +151,7 @@ body{
 .ten{
     transform-style: preserve-3d;
     perspective: 1000px;
-    transform: rotateY(-15deg) rotateX(4deg) rotateZ(45deg) scale(1.05);
+    transform: rotateY(-35deg) rotateX(4deg) rotateZ(45deg) scale(1.05);
 }
 .eleven{
     transform-style: preserve-3d;
