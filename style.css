@@ -268,16 +268,30 @@ img{
         height: auto;
     }
 
+    .header{
+        font-size: 14px;
+    }
+
     .arena{
         right: 35vw;
+        font-size: 14px;
     }
 
     .dropdown{
         right: 18vw;
     }
 
+    .dropbtn{
+        font-size: 14px;
+
+    }
+
     .dropdown-content{
         font-size: 10px;
+    }
+
+    .resume{
+        font-size: 14px;
     }
 
 }
