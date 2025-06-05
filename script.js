@@ -138,6 +138,17 @@ const headerButton = document.querySelector('.header');
 const container = document.querySelector('.container');
 const output = document.querySelector('.output');
 
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+if (mediaQuery.matches) {
+  const screenW = window.innerWidth;
+  const screenH = window.innerHeight;
+
+  const centerX = screenW / 2;
+  const centerY = screenH / 2;
+
+  const maxOffsetX = screenW * 0.25;
+  const maxOffsetY = screenH * 0.75;
+};
 
 
 
