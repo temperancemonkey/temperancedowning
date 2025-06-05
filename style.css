@@ -259,6 +259,28 @@ img{
     display: inline-block;
     
 }
+
+@media (max-width: 768px) {
+
+
+    img{
+        width: 25vw;
+        height: auto;
+    }
+
+    .arena{
+        right: 35vw;
+    }
+
+    .dropdown{
+        right: 18vw;
+    }
+
+    .dropdown-content{
+        font-size: 10px;
+    }
+
+}
   
   
 
