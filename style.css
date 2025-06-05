@@ -73,6 +73,7 @@ body{
    width: 100vw;
    height: 100vh;
    perspective: 1000px;
+
 }
 
 .work {
@@ -233,12 +234,28 @@ img{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-p{
+.header{
     position: fixed;
+    font-family: "Space Mono", serif;
+    font-size: 16px;
     color: crimson; 
     top: 1vw;
     left: 2vw;
+    background-color: transparent;
+    border: none;
 }
+
+.header:hover{
+    color: blue;
+}
+
+.output{
+    position: relative;
+    display: inline-block;
+    
+}
+  
+  
 
 
 

@@ -134,6 +134,19 @@ works.forEach(work => {
   }
 });
 
+const headerButton = document.querySelector('.header');
+const container = document.querySelector('.container');
+const output = document.querySelector('.output');
+
+
+
+
+
+
+
+
+
+
 
 
 
