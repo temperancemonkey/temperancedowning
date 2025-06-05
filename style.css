@@ -279,9 +279,12 @@ img{
 
     .dropdown{
         right: 18vw;
+        /* padding: -1vw; */
+        top: 1.5vw;
     }
 
     .dropbtn{
+
         font-size: 14px;
 
     }
