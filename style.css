@@ -159,6 +159,12 @@ body{
     transform: rotateY(-50deg) rotateX(4deg) rotateZ(50deg) scale(1.05);
 }
 
+.twelve{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: rotateY(-20deg) rotateX(4deg) rotateZ(6deg) scale(1.05);
+}
+
 
 
 
