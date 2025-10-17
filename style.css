@@ -6,173 +6,15 @@
 
 body{
     margin: 0;
-    overflow: hidden;
     font-family: "Space Mono", serif;
 }
-
-/* .cube-container{
-    position: relative;
-    top: 15vw;
-    perspective: 1000px;
-}
-
-.cube-container .cube{
-    width: (var(--cube-width));
-    height: 300px;
-    transform-style: preserve-3d;
-}
-
-.cube-container .cube-face{
-    width: (var(--cube-width));
-    height: 300px;
-    display: flex;
-    position: absolute;
-    left: 500px;
-   
-}
-
-.cube-container .front{
-    background-color: lightgrey;
-    transform: translateZ(var(--translateZ));
-}
-
-.cube-container .back{
-    background-color: lightgrey;
-    transform: rotateY(180deg) translateZ(var(--translateZ));
-}
-
-.cube-container .left{
-    background-color: rgb(165, 165, 165);
-    width: 5px;
-    transform: rotateY(-90deg) translateZ(var(--translateZ))
-}
-
-.cube-container .right{
-    background-color: rgb(165, 165, 165);
-    width: 5px;
-    transform: rotateY(90deg) translateZ(var(--translateZ));
-}
-
-.cube-container .top{
-    background-color: rgb(143, 143, 143);
-    
-    transform: rotateX(90deg) translateZ(var(--translateZ));
-}
-
-.cube-container .bottom{
-    background-color: rgb(143, 143, 143);
-    
-    transform: rotateX(-90deg) translateZ(var(--translateZ));
-} */
-
-
-
-
-.container{
-   position: relative;
-   width: 100vw;
-   height: 100vh;
-   perspective: 1000px;
-
-}
-
-.work {
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    overflow: hidden;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
-    background-color: white;
-
-  }
-
-.work:hover {
-    transform: scale(1.05);
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
-    z-index: 10;
-    background-color: white;
-  }
-
-.one{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(35deg) rotateX(10deg) rotateZ(-4deg) scale(1.05);
-}
-
-.two{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(10deg) rotateX(4deg) rotateZ(10deg) scale(1.05);
-}
-
-.three{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-20deg) rotateX(4deg) rotateZ(-50deg) scale(1.05);
-}
-
-.four{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(20deg) rotateX(4deg) rotateZ(-18deg) scale(1.05);
-    background-color: white;
-}
-
-.five{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-18deg) rotateX(55deg) rotateZ(-25deg) scale(1.05);
-}
-
-.six{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-45deg) rotateX(4deg) rotateZ(-45deg) scale(1.05);
-}
-
-.seven{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-45deg) rotateX(4deg) rotateZ(-90deg) scale(1.05);
-}
-
-.eight{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-20deg) rotateX(4deg) rotateZ(9deg) scale(1.05);
-}
-
-.nine{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(20deg) rotateX(4deg) rotateZ(25deg) scale(1.05);
-}
-
-.ten{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-35deg) rotateX(4deg) rotateZ(45deg) scale(1.05);
-}
-.eleven{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-50deg) rotateX(4deg) rotateZ(50deg) scale(1.05);
-}
-
-.twelve{
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transform: rotateY(-20deg) rotateX(4deg) rotateZ(6deg) scale(1.05);
-}
-
-
 
 
 
 img{
     position: relative;
     padding: .2vw;
-    width: 12vw;
+    width: 100%;
     height: auto;
 }
 
@@ -266,6 +108,7 @@ img{
     display: inline-block;
     
 }
+
 
 @media (max-width: 768px) {
 
