@@ -2,7 +2,7 @@
 
 body{
     font-family: "Space Mono", serif;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .carousel{
@@ -22,8 +22,13 @@ body{
   align-content: center; */
 }
 
+
+
 .cardsix{
+  border: 1px solid black;
+  position: absolute;
   grid-column: 4 / 5;
+  grid-row: 1/2;
   z-index: -1;
 }
 
