@@ -87,6 +87,9 @@ p{
 
 #workOneImg{
   position: fixed;
+  z-index: -999; 
+  height: 100%;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -94,6 +97,64 @@ p{
   font-size: 3vw;
   overflow: scroll;
 }
+
+#workTwo{
+  position: fixed;
+  font-size: 2vw;
+  top: 18vw;
+}
+
+#workTwoImg{
+  position: fixed;
+  z-index: -999; 
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 3vw;
+  overflow: scroll;
+}
+
+#workThree{
+  position: fixed;
+  font-size: 2vw;
+  top: 21vw;
+}
+
+#workThreeImg{
+  position: fixed;
+  z-index: -999; 
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 3vw;
+  overflow: scroll;
+}
+
+#workFour{
+  position: fixed;
+  font-size: 2vw;
+  top: 24vw;
+}
+
+#workFourImg{
+  position: fixed;
+  z-index: -999; 
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 3vw;
+  overflow: scroll;
+}
+
 
 
 
