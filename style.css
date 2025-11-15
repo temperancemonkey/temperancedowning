@@ -1,37 +1,29 @@
 
 
 body{
-    font-family: "Space Mono", serif;
     margin: 4vw;
-    /* overflow-y: hidden; */
+    overflow-x: none;
+    font-family: "Stack Sans Headline", sans-serif;
 }
+
+.customcursor{
+  width: 2vw;
+  height: auto;
+  border-radius: 50%;
+  background-color: brown;
+}
+
 
 .carousel{
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
   padding: 10px;
 }
 
 .card{
-  /* border: 1px solid black; */
   padding: 10px;
   font-size: 30px;
   text-align: center;
-  /* height: 12vw;
-  padding: 1em;
-  text-align: center;
-  align-content: center; */
 }
-
-
-/* 
-.cardsix{
-  border: 1px solid black;
-  position: absolute;
-  grid-column: 4 / 5;
-  grid-row: 1/2;
-  z-index: -1;
-} */
 
 img{
   height: 40vw;
@@ -41,6 +33,70 @@ img{
 p{
   font-size: 1vw;
 }
+
+.header{
+  position: fixed;
+  right: 3vw;
+  top: 1vw;
+  font-size: 2vw;
+}
+
+/* ABOUT */
+
+#aboutHover{
+  position: fixed;
+  font-size: 2vw;
+  top: 3vw;
+}
+
+#aboutText{
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* CONTACT */
+
+#contactHover{
+  position: fixed;
+  font-size: 2vw;
+  top: 6.5vw;
+}
+
+#contactEmail{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  z-index: 999; 
+  font-size: 3vw;
+}
+
+/* WORK */
+
+#workOne{
+  position: fixed;
+  font-size: 2vw;
+  top: 15vw;
+}
+
+#workOneImg{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 3vw;
+  overflow: scroll;
+}
+
+
+
 
 
 
@@ -67,7 +123,7 @@ p{
 
 /* TEXT */
 
-.descriptions{
+/* .descriptions{
     position: absolute;
     z-index: -1px;
 }
@@ -118,7 +174,6 @@ p{
   .dropdown-content {
     display: none;
     position: absolute;
-    /* min-width: 160px; */
     color: rgb(13, 0, 255);
     font-size: 12px;
     z-index: 1;
@@ -151,7 +206,7 @@ p{
 .output{
     position: relative;
     display: inline-block;  
-}
+} */
 
 
   
