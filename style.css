@@ -58,6 +58,18 @@ p{
   font-size: 3vw;
 }
 
+/* CV */
+
+.resume{
+  position: fixed;
+  font-size: 2vw;
+  top: 8.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+
+
 /* WORK */
 
 #workOne{
