@@ -82,6 +82,17 @@ workFive.addEventListener('click', () => {
     }
 });
 
+const workSix = document.getElementById('workSix');
+const workSixImg = document.getElementById('workSixImg');
+
+workSix.addEventListener('click', () => {
+    if (workSixImg.style.display === 'block') {
+        workSixImg.style.display = 'none';
+    } else {
+        workSixImg.style.display = 'block';
+    }
+});
+
 const posterMisc = document.getElementById('posterMisc');
 const posterMiscImg = document.getElementById('posterMiscImg');
 

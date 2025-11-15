@@ -167,12 +167,29 @@ p{
   overflow: scroll;
 }
 
+#workSix{
+  position: fixed;
+  font-size: 2vw;
+  top: 30vw;
+}
 
+#workSixImg{
+  position: fixed;
+  z-index: -999; 
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-size: 3vw;
+  overflow: scroll;
+}
 
 #posterMisc{
   position: fixed;
   font-size: 2vw;
-  top: 30vw;
+  top: 33vw;
 }
 
 #posterMiscImg{
@@ -188,119 +205,6 @@ p{
   overflow: scroll;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TEXT */
-
-/* .descriptions{
-    position: absolute;
-    z-index: -1px;
-}
-
-.resume{
-    position: fixed;
-    right: 2vw;
-   top: 2vw;
-   text-decoration: none;
-   color: crimson;
-}
-
-.resume:hover{
-    color: blue;
-}
-
-.arena{
-    position: fixed;
-    right: 15vw;
-   top: 2vw;
-   text-decoration: none;
-   color: crimson;
-}
-
-.arena:hover{
-    color: blue;
-}
-
-.dropbtn {
-    border: none;
-    font-family: "Space Mono", serif;
-    color: crimson;
-    font-size: 16px;
-    background-color: transparent;
-  }
-
-  .dropbtn:hover{
-    color: blue;
-  }
-
-  .dropdown {
-    position: fixed;
-    top: 2vw;
-    right: 8.5vw;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    color: rgb(13, 0, 255);
-    font-size: 12px;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dropdown-content a {
-    text-decoration: none;
-    display: flex;
-  }
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.header{
-    position: fixed;
-    font-family: "Space Mono", serif;
-    font-size: 16px;
-    color: crimson; 
-    top: 2vw;
-    left: 2vw;
-    background-color: transparent;
-    border: none;
-}
-
-.header:hover{
-    color: blue;
-}
-
-.output{
-    position: relative;
-    display: inline-block;  
-} */
 
 
   
