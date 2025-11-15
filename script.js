@@ -93,6 +93,17 @@ workSix.addEventListener('click', () => {
     }
 });
 
+const workSeven = document.getElementById('workSeven');
+const workSevenImg = document.getElementById('workSevenImg');
+
+workSeven.addEventListener('click', () => {
+    if (workSevenImg.style.display === 'block') {
+        workSevenImg.style.display = 'none';
+    } else {
+        workSevenImg.style.display = 'block';
+    }
+});
+
 const posterMisc = document.getElementById('posterMisc');
 const posterMiscImg = document.getElementById('posterMiscImg');
 
