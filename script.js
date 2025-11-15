@@ -71,6 +71,29 @@ workFour.addEventListener('click', () => {
     }
 });
 
+const workFive = document.getElementById('workFive');
+const workFiveImg = document.getElementById('workFiveImg');
+
+workFive.addEventListener('click', () => {
+    if (workFiveImg.style.display === 'block') {
+        workFiveImg.style.display = 'none';
+    } else {
+        workFiveImg.style.display = 'block';
+    }
+});
+
+const posterMisc = document.getElementById('posterMisc');
+const posterMiscImg = document.getElementById('posterMiscImg');
+
+posterMisc.addEventListener('click', () => {
+    if (posterMiscImg.style.display === 'block') {
+        posterMiscImg.style.display = 'none';
+    } else {
+        posterMiscImg.style.display = 'block';
+    }
+});
+
+
 
 
 
