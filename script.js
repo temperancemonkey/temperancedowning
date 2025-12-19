@@ -126,6 +126,17 @@ workEight.addEventListener('click', () => {
     }
 });
 
+const workNine = document.getElementById('workNine');
+const workNineImg = document.getElementById('workNineImg');
+
+workNine.addEventListener('click', () => {
+    if (workNineImg.style.display === 'block') {
+        workNineImg.style.display = 'none';
+    } else {
+        workNineImg.style.display = 'block';
+    }
+});
+
 
 
 
