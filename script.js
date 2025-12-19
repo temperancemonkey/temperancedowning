@@ -115,6 +115,17 @@ posterMisc.addEventListener('click', () => {
     }
 });
 
+const workEight = document.getElementById('workEight');
+const workEightImg = document.getElementById('workEightImg');
+
+workEight.addEventListener('click', () => {
+    if (workEightImg.style.display === 'block') {
+        workEightImg.style.display = 'none';
+    } else {
+        workEightImg.style.display = 'block';
+    }
+});
+
 
 
 
