@@ -3,27 +3,31 @@
 body{
     margin: 2vw;
     margin-top: 1vw;
-    overflow-x: none;
+    overflow-x: hidden;
     font-family: "Stack Sans Headline", sans-serif;
+    background-color: black;
 }
 
-img{
+
+
+/* img{
   height: 60vw;
   width: auto;
-}
+} */
 
-p{
+/* p{
   font-size: 1.5vw;
-}
+} */
 
-.header{
+/* .header{
   position: fixed;
   right: 3vw;
   top: 1vw;
   font-size: 2vw;
-}
+} */
 
 /* ABOUT */
+
 
 #aboutHover{
   position: fixed;
@@ -33,9 +37,9 @@ p{
 
 #aboutText{
   position: fixed; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  color: white;
+  /* transform: translate(-50%, -50%); */
   z-index: 1000; 
   text-align: center;
   font-size: 3vw;
@@ -69,11 +73,99 @@ p{
   color: black;
 }
 
+/* work expirimnet */
+
+.line{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 2000px;
+  height: 1px;
+}
+
+.links{
+  display: flex;
+  font-size: 5vw;
+  white-space: nowrap;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.links:hover{
+  color: blue;
+}
+
+img{
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  object-fit: contain;
+}
+
+#cover{
+  object-fit: cover;
+}
+
+.one{
+  display: flex;
+  /* justify-content: center; */
+  height: 20%;
+  width: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.two{
+  display: flex;
+  /* justify-content: center; */
+  height: 20%;
+  width: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.three{
+  display: flex;
+  /* justify-content: center; */
+  height: 20%;
+  width: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.four{
+  display: flex;
+  /* justify-content: center; */
+  height: 20%;
+  width: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes slide{
+  0%{
+      transform: translate(0,0);
+  }
+  100%{
+      transform: translate(-100%,0);
+  }
+}
+
+
+
 
 
 /* WORK */
 
-#workOne{
+/* #workOne{
   position: fixed;
   font-size: 2vw;
   top: 15vw;
@@ -111,6 +203,7 @@ p{
   overflow: scroll;
 }
 
+
 #workThree{
   position: fixed;
   font-size: 2vw;
@@ -129,6 +222,7 @@ p{
   font-size: 3vw;
   overflow: scroll;
 }
+
 
 #workFour{
   position: fixed;
@@ -168,101 +262,8 @@ p{
   overflow: scroll;
 }
 
-#workSix{
-  position: fixed;
-  font-size: 2vw;
-  top: 30vw;
-}
-
-#workSixImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
-
-#workSeven{
-  position: fixed;
-  font-size: 2vw;
-  top: 33vw;
-}
-
-#workSevenImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
 
 
-#posterMisc{
-  position: fixed;
-  font-size: 2vw;
-  top: 36vw;
-}
-
-#posterMiscImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
-
-#workEight{
-  position: fixed;
-  font-size: 2vw;
-  top: 39vw;
-}
-
-#workEightImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
-
-#workNine{
-  position: fixed;
-  font-size: 2vw;
-  top: 42vw;
-}
-
-#workNineImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
 
 
 
@@ -279,7 +280,7 @@ p{
 
   
 
-
+ */
 
 
 
