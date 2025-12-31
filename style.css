@@ -151,7 +151,8 @@ img{
 }
 
 .five{
-  display: grid;
+  display: flex;
+  flex-direction: row;
   grid-template-rows: repeat(6, auto);
   /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
   overflow-y: auto;
