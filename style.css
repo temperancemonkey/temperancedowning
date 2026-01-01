@@ -8,6 +8,13 @@ body{
     background-color: black;
 }
 
+@font-face {
+  font-family: 'Wares'; /* Choose a descriptive name for your font */
+  src: url('fonts/hardware-Regular.woff') format('woff'); /* Update paths as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 /* img{
@@ -175,6 +182,35 @@ img{
   font-size: 25px;
   /* border: 2px rgb(73, 33, 15) solid; */
 }
+
+.seven{
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: repeat(6, auto);
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+  white-space: nowrap;
+  font-size: 25px;
+  /* border: 2px rgb(73, 33, 15) solid; */
+}
+
+.eight{
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: repeat(6, auto);
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+  white-space: nowrap;
+  font-size: 50px;
+  font-family: 'Wares', serif;
+  /* border: 2px rgb(73, 33, 15) solid; */
+}
+
+
 
 @keyframes slide{
   0%{
