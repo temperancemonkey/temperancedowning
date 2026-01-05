@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Wares'; /* Choose a descriptive name for your font */
+    src: url('fonts/hardware-Regular.woff') format('woff'); /* Update paths as needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  p{
+    font-size: 25vw;
+    font-family: 'Wares', serif;
+  }
+
