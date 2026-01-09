@@ -1,5 +1,7 @@
 body{
     background-color: black;
+    color: white;
+    font-family: "Stack Sans Headline", sans-serif;
 }
 
 img{
@@ -7,4 +9,15 @@ img{
     width: 50%;
     height: auto;
     margin: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
