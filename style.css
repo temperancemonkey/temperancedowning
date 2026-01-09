@@ -167,33 +167,6 @@ img{
   font-size: 25px;
   color: rgb(255, 255, 255);
 }
-
-.five{
-  display: flex;
-  flex-direction: row;
-  grid-template-rows: repeat(6, auto);
-  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  white-space: nowrap;
-  font-size: 25px;
-  /* border: 2px rgb(73, 33, 15) solid; */
-}
-
-.six{
-  display: flex;
-  flex-direction: row;
-  grid-template-rows: repeat(6, auto);
-  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  white-space: nowrap;
-  font-size: 25px;
-  /* border: 2px rgb(73, 33, 15) solid; */
-}
-
 .seven{
   display: flex;
   flex-direction: row;
