@@ -1,326 +1,174 @@
-
-
 body{
-    margin: 2vw;
-    margin-top: 1vw;
-    overflow-x: hidden;
-    font-family: "Stack Sans Headline", sans-serif;
-    background-color: black;
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+  font-family: "Stack Sans Headline", sans-serif;
+  background-color: aliceblue;
+  margin: 1vw;
+  padding: 1vw;
+  overflow-x: hidden
+
 }
 
 @font-face {
-  font-family: 'Wares'; /* Choose a descriptive name for your font */
-  src: url('fonts/hardware-Regular.woff') format('woff'); /* Update paths as needed */
+  font-family: 'Wares'; 
+  src: url('fonts/hardware-Regular.woff') format('woff'); 
   font-weight: normal;
   font-style: normal;
 }
 
-
-
-/* img{
-  height: 60vw;
-  width: auto;
-} */
-
-/* p{
-  font-size: 1.5vw;
-} */
-
-/* .header{
-  position: fixed;
-  right: 3vw;
-  top: 1vw;
-  font-size: 2vw;
-} */
-
-/* ABOUT */
-
-
-/* #aboutHover{
-  position: fixed;
-  font-size: 2vw;
-  top: 3vw;
-}
-
-#aboutText{
-  position: fixed; 
-  justify-content: center;
-  color: white;
-  transform: translate(-50%, -50%);
-  z-index: 1000; 
-  text-align: center;
-  font-size: 3vw;
-} */
-
-/* CONTACT */
-
-/* #contactHover{
-  position: fixed;
-  font-size: 2vw;
-  top: 6.5vw;
-}
-
-#contactEmail{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  z-index: 999; 
-  font-size: 3vw;
-} */
-
-/* CV */
-
-/* .resume{
-  position: fixed;
-  font-size: 2vw;
-  top: 8.5vw;
-  text-decoration: none;
-  color: black;
-} */
-
-/* work expirimnet */
-
-.line{
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  width: 2000px;
-  height: 1px;
-}
-
-.links{
-  display: flex;
-  font-size: 5vw;
-  white-space: nowrap;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.links:hover{
-  color: blue;
+img{
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  z-index: 100000;
 }
 
 img{
-  display: inline-block;
-  width: 20%;
+  width: 100%;
+  max-width: 900px;
+  margin: 1vw;
   height: auto;
+  display: block;
+  max-width: min(90vw, 900px);
+}
+
+.minigrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+  background-color: black;
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.grid-item{
+  background-color: aliceblue;
+  padding: .2vw;
+}
+
+.works{
+  position: sticky;
+  top: 1rem;
+  width: clamp(200px, 25vw, 320px);
+  height: auto;
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.gridContents{
+  position: absolute;
+  left: 45vw;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  object-fit: contain;
+
 }
 
-#cover{
-  object-fit: cover;
+.content{
+  position: absolute;
+  z-index: -20000;
+  left: 25vw;
+  justify-content: center;
+  align-items: center;
 }
 
-.zero{
-  display: flex;
-  /* justify-content: center; */
-  height: 20%;
-  width: auto;
-  overflow-y: auto;
+.infogrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+  background-color: black;
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.grid-item{
+  background-color: aliceblue;
+  padding: .2vw;
+}
+
+
+
+
+
+
+/* .info{
+  position: absolute;
+  width: 23.1vw;
+  height: auto;
   scrollbar-width: none;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
+  outline: 1px solid rgb(0, 0, 0);
+  bottom: 2vw;
 }
 
-.one{
-  display: flex;
-  /* justify-content: center; */
-  height: 20%;
-  width: auto;
-  overflow-y: auto;
-  scrollbar-width: none;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
+#infoOne{
+  position: absolute;
+  z-index: 100000;
+  bottom: 4.9vw;
+  padding-left: .2vw;
 }
 
-.two{
-  display: flex;
-  /* justify-content: center; */
-  height: 20%;
-  width: auto;
-  overflow-y: auto;
-  scrollbar-width: none;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
+#infoOneText{
+  position: absolute;
+  left: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-.three{
-  display: flex;
-  /* justify-content: center; */
-  height: 20%;
-  width: auto;
-  overflow-y: auto;
-  scrollbar-width: none;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
+#infoTwo{
+  position: absolute;
+  z-index: 100000;
+  bottom: 3.4vw;
+  padding-left: .2vw;
 }
 
-.four{
-  display: flex;
-  /* justify-content: center; */
-  height: 20%;
-  width: auto;
-  overflow-y: auto;
-  scrollbar-width: none;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-}
-.seven{
-  display: flex;
-  flex-direction: row;
-  grid-template-rows: repeat(6, auto);
-  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  white-space: nowrap;
-  font-size: 25px;
-  /* border: 2px rgb(73, 33, 15) solid; */
+#infoTwoText{
+  position: absolute;
+  left: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-.eight{
-  display: flex;
-  flex-direction: row;
-  grid-template-rows: repeat(6, auto);
-  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  white-space: nowrap;
-  font-size: 50px;
-  font-family: 'Wares', serif;
-  /* border: 2px rgb(73, 33, 15) solid; */
+#infoThree{
+  position: absolute;
+  z-index: 100000;
+  bottom: 2vw;
+  padding-left: .2vw;
 }
 
-.nine{
-  display: flex;
-  flex-direction: row;
-  grid-template-rows: repeat(6, auto);
-  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.182); */
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  white-space: nowrap;
-  font-size: 50px;
-  /* border: 2px rgb(73, 33, 15) solid; */
+#infoThreeText{
+  position: absolute;
+  left: 50vw;
+  top: 4vw;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-
-
-@keyframes slide{
-  0%{
-      transform: translate(0,0);
-  }
-  100%{
-      transform: translate(-100%,0);
-  }
-}
+a{
+  color: black;
+  text-decoration: none;
+} */
 
 
 
 
 
 
-/* WORK */
-
-/* #workOne{
-  position: fixed;
-  font-size: 2vw;
-  top: 15vw;
-}
-
-#workOneImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
-
-#workTwo{
-  position: fixed;
-  font-size: 2vw;
-  top: 18vw;
-}
-
-#workTwoImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
 
 
-#workThree{
-  position: fixed;
-  font-size: 2vw;
-  top: 21vw;
-}
-
-#workThreeImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
 
 
-#workFour{
-  position: fixed;
-  font-size: 2vw;
-  top: 24vw;
-}
 
-#workFourImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
 
-#workFive{
-  position: fixed;
-  font-size: 2vw;
-  top: 27vw;
-}
 
-#workFiveImg{
-  position: fixed;
-  z-index: -999; 
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  font-size: 3vw;
-  overflow: scroll;
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -340,7 +188,7 @@ img{
 
   
 
- */
+
 
 
 
