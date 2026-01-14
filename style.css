@@ -66,6 +66,7 @@ img{
 .content{
   position: absolute;
   z-index: -20000;
+  top: 15vw;
   left: 25vw;
   justify-content: center;
   align-items: center;
