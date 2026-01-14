@@ -18,16 +18,7 @@ gridItems.forEach(item => {
     });
 });
 
-// const gridItem = document.getElementsByClassName('grid-item');
-// const gridContent = document.getElementsByClassName('gridContents') [0] ;
 
-// gridItem[0].addEventListener('click', () => {
-//     if(gridContent.style.display === 'block') {
-//         gridContent.style.display = 'none';
-//     } else {
-//         gridContent.style.display = 'block';
-//     }
-// });
 
 
 
