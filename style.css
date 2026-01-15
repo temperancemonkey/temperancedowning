@@ -41,6 +41,10 @@ img{
   outline: 1px solid rgb(0, 0, 0);
 }
 
+.minigrid :hover{
+  color: blue;
+}
+
 .grid-item{
   background-color: aliceblue;
   padding: .2vw;
@@ -87,9 +91,21 @@ img{
   outline: 1px solid rgb(0, 0, 0);
 }
 
+.infogrid :hover{
+  color: blue;
+}
+
 .grid-item{
   background-color: aliceblue;
   padding: .2vw;
+}
+
+
+
+.objects{
+  position: absolute;
+  width: 50px;
+  height: auto;
 }
 
 
