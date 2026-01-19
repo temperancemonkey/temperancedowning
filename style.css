@@ -33,6 +33,12 @@ img{
   max-width: min(90vw, 900px);
 }
 
+.decor{
+  display: flex;
+  width: 2%;
+  height: auto;
+}
+
 .minigrid{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -71,9 +77,15 @@ img{
   position: absolute;
   z-index: -20000;
   top: 15vw;
-  left: 25vw;
+  left: 35vw;
   justify-content: center;
   align-items: center;
+}
+
+.worktext{
+  position: absolute;
+  
+
 }
 
 .text{
