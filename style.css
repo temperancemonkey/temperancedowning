@@ -97,13 +97,14 @@ span{
   position: absolute;
   width: 990px;
   height: auto;
-  /* z-index: -20000; */
   top: 15vw;
   left: 22%;
 }
 
 .worktext{
-  position: absolute;
+  grid-column: 1;
+  text-align: left;
+  width: 1fr;
 }
 
 .text{
