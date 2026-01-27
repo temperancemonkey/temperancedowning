@@ -1,6 +1,7 @@
 body{
   overflow-x: hidden;
-  font-family: "Stack Sans Headline", sans-serif;
+  /* font-family: "Stack Sans Headline", sans-serif; */
+
   background-color: aliceblue;
   margin: 1vw;
   padding: 1vw;
@@ -31,21 +32,6 @@ img{
 
 .header{
   grid-column: 2;
-}
-
-#decor{
-  position: sticky;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 60vw;
-  height: 5vw;
-  top: 1vw;
-  border: 25px solid transparent;
-  padding: 15px;
-  border-image: url(/symbols/usefour.png);
-  border-image-slice: 200;
-  border-image-repeat: repeat;
-  gap: 1px;
 }
 
 span{
@@ -102,9 +88,11 @@ span{
 }
 
 .worktext{
-  grid-column: 1;
+  position: sticky;
+  z-index: 100000000;
   text-align: left;
-  width: 1fr;
+  width: 20vw;
+  height: auto;
 }
 
 .text{
@@ -136,6 +124,10 @@ span{
 #triedandtrue{
   width: 50%;
   height: auto;
+}
+
+#me{
+  z-index: -1000000;
 }
 
 
