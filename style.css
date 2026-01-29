@@ -7,6 +7,7 @@ body{
   margin: 10px;
   padding: 10px;
   overflow-x: hidden;
+  cursor: grab;
 }
 
 .container{
@@ -18,12 +19,6 @@ body{
   left: 5vw;
   font-size: 7vw;
 }
-
-.container:nth-child(2n){
-  text-indent: 40px;
-}
-
-
 
 .infocontainer{
   position: sticky;
@@ -44,6 +39,11 @@ body{
 
 .grid-item:hover{
   color: blue;
+  cursor: grabbing;
+}
+
+.grid-item:nth-of-type(2){
+  background-color: firebrick;
 }
 
 img{
