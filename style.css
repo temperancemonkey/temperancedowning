@@ -1,4 +1,4 @@
-body{
+/* body{
   overflow-x: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: aliceblue;
@@ -89,7 +89,6 @@ span{
 
 .worktext{
   position: fixed;
-  /* z-index: 100000000; */
   width: 20vw;
   height: auto;
   top: 50%;
@@ -182,4 +181,68 @@ span{
 
 
 
+ */
 
+body{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: aliceblue;
+  color: rgb(139, 171, 200);
+  font-family: serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container{
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  grid-row: 1;
+  padding: 10px;
+  font-size: 7vw;
+}
+
+.container:nth-child(2n){
+  text-indent: 40px;
+}
+
+
+
+.infocontainer{
+  position: sticky;
+  z-index: 10000000;
+  top: 250px;
+  margin: 10px;
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+  grid-row: 2;
+  padding: 10px;
+  font-size: 5vw;
+}
+
+#selfie{
+  position: absolute;
+}
+
+
+
+img{
+  width: 50%;
+  height: auto;
+
+}
+
+.text{
+  font-size: 2vw;
+}
+
+.worktext{
+  position: fixed;
+  top: 10vw;
+  right: 5vw;
+  flex-direction: column;
+  font-size: 2vw;
+  width: 500px;
+  height: auto;
+}
