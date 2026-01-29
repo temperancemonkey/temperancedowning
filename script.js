@@ -1,4 +1,4 @@
-// TEST
+
 
 const gridItems = document.querySelectorAll('.grid-item');
 gridItems.forEach(item => {
