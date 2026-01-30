@@ -22,7 +22,7 @@ body{
 
 .infocontainer{
   position: sticky;
-  z-index: 10000000;
+  /* z-index: 10000000; */
   top: 250px;
   margin: 10px;
   margin-top: auto;
@@ -34,7 +34,11 @@ body{
 }
 
 #selfie{
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: -200; */
 }
 
 .grid-item:hover{
@@ -53,7 +57,14 @@ img{
 }
 
 .text{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  z-index: 2000000000;
   font-size: 2vw;
+  text-align: center;
 }
 
 .worktext{
