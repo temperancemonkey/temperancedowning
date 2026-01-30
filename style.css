@@ -1,6 +1,7 @@
 body{
   display: grid;
   grid-template-rows: 1fr 1fr;
+  box-sizing: border-box;
   background-color: aliceblue;
   color: rgb(139, 171, 200);
   font-family: serif;
@@ -22,7 +23,7 @@ body{
 
 .infocontainer{
   position: sticky;
-  /* z-index: 10000000; */
+  z-index: 10000000;
   top: 250px;
   margin: 10px;
   margin-top: auto;
@@ -38,12 +39,16 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: -200; */
+  z-index: -200;
+}
+
+.grid-item{
+  width: 100%;
+  height: auto;
 }
 
 .grid-item:hover{
   color: blue;
-  cursor: grabbing;
 }
 
 .grid-item:nth-of-type(2){
@@ -68,9 +73,13 @@ img{
 }
 
 .worktext{
+  position: sticky;
+  top: 0;
+  margin: 0;
   font-size: 2vw;
   width: 500px;
   height: auto;
+  background-color: white;
 }
 
 .content{
