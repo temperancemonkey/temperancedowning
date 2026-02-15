@@ -73,7 +73,7 @@ img{
 
 .worktext{
   position: sticky;
-  top: 0;
+  /* top: 0; */
   left: 60%;
   font-size: 2vw;
   width: 500px;
