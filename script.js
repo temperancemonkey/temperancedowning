@@ -1,5 +1,3 @@
-
-
 const gridItems = document.querySelectorAll('.grid-item');
 gridItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -17,4 +15,8 @@ gridItems.forEach(item => {
 
     });
 });
+
+
+const workItem = document.querySelector('.workItem');
+
 
