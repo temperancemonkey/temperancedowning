@@ -12,11 +12,34 @@ gridItems.forEach(item => {
 
         content.style.display = 
             content.style.display === 'block' ? 'none' : 'block';
+    });
+});
 
+document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
+    const slider = wrapper.querySelector('.slider');
+    const slides = wrapper.querySelectorAll('img');
+    let index = 0;
+
+    wrapper.addEventListener('click', (e) => {
+        const rect = wrapper.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const width = rect.width;
+
+        if (clickX < width / 2) {
+            // LEFT SIDE
+            index = (index - 1 + slides.length) % slides.length;
+        } else {
+            // RIGHT SIDE
+            index = (index + 1) % slides.length;
+        }
+
+        slider.style.transform = `translateX(-${index * 100}%)`;
     });
 });
 
 
-const workItem = document.querySelector('.workItem');
+
+
+
 
 

@@ -9,14 +9,16 @@ body{
   padding: 10px;
   overflow-x: hidden;
   cursor: grab;
+  scrollbar-width: none;
 }
-
-
 
 .container{
   flex-direction: column;
   width: 100%;
   height: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
   grid-row: 1;
   padding: 10px;
   left: 5vw;
@@ -38,10 +40,11 @@ body{
 
 #selfie{
   position: fixed;
+  width: 30%;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -200;
 }
 
 .grid-item{
@@ -55,26 +58,42 @@ body{
   color: blue;
 }
 
-
 .content{
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   width: 100%;
   height: 800px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 img{
-  grid-row: 1;
-  float: left;
-  object-fit: cover;
-  width: 30%;
+  display: inline-block;
+  width: 50%;
   height: auto;
-  margin: 10px;
+  cursor: pointer;
+  
 }
 
+.slider-wrapper{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
 
+.slider{
+  display: flex;
+  transition: transform 0.4 ease;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
 
 .text{
   position: fixed;
@@ -95,22 +114,8 @@ img{
   height: auto;
 }
 
-#symbols{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 9%;
-  height: auto;
-  mix-blend-mode: multiply;
-  opacity: .5;
-  animation: 2s infinite linear blink;
-}
 
-@keyframes blink{
-  0% {opacity: 0%;}
-  100% {opacity: 50%;}
-}
+
 
 
 
