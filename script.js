@@ -15,63 +15,25 @@ gridItems.forEach(item => {
     });
 });
 
-// document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
-//     const slider = wrapper.querySelector('.slider');
-//     const slides = wrapper.querySelectorAll('img');
-//     let index = 0;
 
-//     wrapper.addEventListener('click', (e) => {
-//         const rect = wrapper.getBoundingClientRect();
-//         const clickX = e.clientX - rect.left;
-//         const width = rect.width;
 
-//         if (clickX < width / 2) {
-//             index = (index - 1 + slides.length) % slides.length;
-//         } else {
-     
-//             index = (index + 1) % slides.length;
-//         }
 
-//         slider.style.transform = `translateX(-${index * 100}%)`;
-//     });
-// });
+document.querySelectorAll('.content').forEach(section => {
+    const symbol = section.querySelector('.symbol');
+    const display = section.querySelector('.symboldisplay');
 
-document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
-    const slider = wrapper.querySelector('.slider');
-    const slides = wrapper.querySelectorAll('img');
-    let index = 0;
+    if (!symbol || !display) return;
 
-    // Change cursor based on mouse position
-    wrapper.addEventListener('mousemove', (e) => {
-        const rect = wrapper.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left;
-        const width = rect.width;
-
-        if (mouseX < width / 2) {
-            wrapper.style.cursor = 'w-resize'; // left arrow
-        } else {
-            wrapper.style.cursor = 'e-resize'; // right arrow
-        }
+    symbol.addEventListener('mouseenter', () => {
+        display.style.display = 'block';
     });
 
-    // Reset cursor when leaving wrapper
-    wrapper.addEventListener('mouseleave', () => {
-        wrapper.style.cursor = 'default';
-    });
-
-    // Handle clicks
-    wrapper.addEventListener('click', (e) => {
-        const rect = wrapper.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
-        const width = rect.width;
-
-        if (clickX < width / 2) {
-            index = (index - 1 + slides.length) % slides.length;
-        } else {
-            index = (index + 1) % slides.length;
-        }
-
-        slider.style.transform = `translateX(-${index * 100}%)`;
+    symbol.addEventListener('mouseleave', () => {
+        display.style.display = 'none';
     });
 });
+
+
+
+
 
