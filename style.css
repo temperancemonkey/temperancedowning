@@ -1,130 +1,82 @@
 body{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  box-sizing: border-box;
   background-color: aliceblue;
   color: rgb(139, 171, 200);
   font-family: serif;
-  margin: 0;
-  padding: 10px;
-  overflow-x: hidden;
-  scrollbar-width: none;
-  user-select: none;
-}
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+ }
 
-.container{
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  overflow-x: auto;
-  white-space: nowrap;
-  box-sizing: border-box;
-  grid-row: 1;
-  padding: 10px;
-  left: 5vw;
-  font-size: 7vw;
-  scrollbar-width: none;
-}
+ .container{
+  display: grid;
+ }
 
-.infocontainer{
-  position: sticky;
-  z-index: 10000000;
-  top: 250px;
+ .grid-item{
+  font-size: 5vw;
   margin: 10px;
+ }
+
+ .grid-item:hover{
+  color: blue;
+ }
+
+ a{
+  text-decoration: none;
+  color: rgb(139, 171, 200);
+ }
+
+ a:hover{
+  color: blue;
+ }
+
+ .info-container{
   margin-top: auto;
-  width: 100%;
-  height: auto;
-  grid-row: 2;
-  padding: 10px;
   font-size: 5vw;
 }
 
-.grid-item{
-  top: 0;
-  z-index: -100000000;
-  width: 100%;
-  height: auto;
-  margin: 15px;
-  scrollbar-width: none;
-}
-
-.grid-item:hover{
-  color: blue;
-}
-
-.content{
-  display: flex;
-  /* white-space: nowrap; */
-  width: 100%;
-  height: auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  /* background-color: blue; */
-  position: relative;
-}
-
-img {
-  /* display: inline-block; */
-  width: 60%;
-  height: auto;
-  white-space: nowrap;
-  margin: 15px;
-  padding: 15px;
-}
-
-#me{
-  position: fixed;
+img{
   width: 50%;
   height: auto;
 }
 
 .text{
   position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 850px;
+  top: 9vw;
+  align-self: center;
+  justify-self: center;
   z-index: 20000000;
   font-size: 2vw;
   text-align: center;
 }
 
-.infobutton{
-  position: absolute;
-  width: 100%;
+.slideshow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display{
+  cursor: pointer;
+}
+
+.work{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+}
+
+.work img{
+  width: 70%;
   height: auto;
+}
+
+
+.text img{
   top: 20vw;
+  width: 20vw;
+  z-index: -1000;
 }
-
-.symbol{
-  position: sticky;
-  left: 0;
-  top: 0;
-  bottom: 42%;
-  width: 3%;
-  height: auto;
-  z-index: 90000;
-}
-
-.symboldisplay{
-  position: absolute;
-  width: 50%;
-  height: auto;
-  font-size: 2vw;
-  text-wrap: wrap;
-  z-index: 10000000000;
-  flex: 0 0 20;
-  background-color: aliceblue;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-
-
 
 
 

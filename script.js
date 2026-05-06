@@ -1,3 +1,5 @@
+// GRID ITEM CLICK
+
 const gridItems = document.querySelectorAll('.grid-item');
 gridItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -15,23 +17,62 @@ gridItems.forEach(item => {
     });
 });
 
+// WORK SLIDESHOWS
 
+const imgElements = document.querySelectorAll('.display');
 
+imgElements.forEach((imgElement) => {
 
-document.querySelectorAll('.content').forEach(section => {
-    const symbol = section.querySelector('.symbol');
-    const display = section.querySelector('.symboldisplay');
+    const images = imgElement.dataset.images.split(',').map(s => s.trim());
 
-    if (!symbol || !display) return;
+    let currentIndex = 0;
 
-    symbol.addEventListener('mouseenter', () => {
-        display.style.display = 'block';
-    });
+    function updateImage() {
+        imgElement.src = images[currentIndex];
+    }
 
-    symbol.addEventListener('mouseleave', () => {
-        display.style.display = 'none';
+    imgElement.addEventListener("click", (e) => {
+        const rect = imgElement.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+    
+        if (clickX < rect.width / 2) {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+        } else {
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+    
+        updateImage();
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
