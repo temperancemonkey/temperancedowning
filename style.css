@@ -48,6 +48,14 @@ img{
   height: auto;
 }
 
+#TriedandTrue img{
+  position: relative;
+  left: 10vw;
+  width: 60%;
+  height: auto;
+
+}
+
 .text{
   position: fixed;
   top: 5vw;
