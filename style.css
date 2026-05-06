@@ -8,11 +8,12 @@ body{
 
  .container{
   display: grid;
+  margin-left: 2vw;
  }
 
  .grid-item{
-  font-size: 5vw;
-  margin: 10px;
+  font-size: 5.5vw;
+  margin: 5px;
  }
 
  .grid-item:hover{
@@ -31,6 +32,7 @@ body{
  .info-container{
   margin-top: auto;
   font-size: 5vw;
+  margin-left: 2vw;
 }
 
 img{
