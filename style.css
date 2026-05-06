@@ -40,7 +40,7 @@ img{
 
 .text{
   position: fixed;
-  top: 9vw;
+  top: 5vw;
   align-self: center;
   justify-self: center;
   z-index: 20000000;
@@ -72,11 +72,6 @@ img{
 }
 
 
-.text img{
-  top: 20vw;
-  width: 20vw;
-  z-index: -1000;
-}
 
 
 
