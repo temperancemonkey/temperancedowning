@@ -4,6 +4,7 @@ body{
   font-family: serif;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  user-select: none;
  }
 
  .container{
@@ -46,7 +47,15 @@ img{
 #Wares img{
   width: 35%;
   height: auto;
+  pointer-events: none;
 }
+
+#me img{
+  width: 20%;
+  height: auto;
+}
+
+
 
 #TriedandTrue img{
   position: relative;
