@@ -3,7 +3,7 @@ body{
   color: rgb(139, 171, 200);
   font-family: serif;
   display: grid;
-  grid-template-rows: 1fr 1fr .5fr;
+  grid-template-rows: 1fr 25vh 1fr;
   user-select: none;
  }
 
