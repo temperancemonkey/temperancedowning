@@ -36,10 +36,10 @@ body{
  .info-container{
   margin-top: auto;
   font-size: 5vw;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2vw;
-  margin-bottom: 1vw;
+}
+
+.infogrid{
+  text-align: center;
 }
 
 img{
@@ -64,11 +64,9 @@ img{
 }
 
 .text{
-  position: fixed;
-  top: 5vw;
+  margin: 2vw;
   align-self: center;
   justify-self: center;
-  z-index: 20000000;
   font-size: 2vw;
   text-align: center;
 }

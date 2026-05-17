@@ -48,20 +48,6 @@ imgElements.forEach((imgElement) => {
 });
 
 
-// PORTRAIT HOVER
-
-const element = document.querySelector('[data-target="me"]');
-const popUp = document.getElementById('me');
-
-    element.addEventListener("mouseenter", () => {
-        popUp.style.display = 'block';
-    });
-
-    element.addEventListener("mouseleave", () => {
-        popUp.style.display = 'none';
-    });
-
-
 
 
 
