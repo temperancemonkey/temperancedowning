@@ -15,7 +15,9 @@ gridItems.forEach(item => {
         content.style.display = 
             content.style.display === 'block' ? 'none' : 'block';
     });
+
 });
+
 
 // WORK SLIDESHOWS
 

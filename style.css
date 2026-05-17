@@ -9,14 +9,17 @@ body{
 
  .container{
   display: grid;
-  margin-left: 2vw;
-  margin-top: 1vw;
-
+  /* margin-left: 2vw;
+  margin-top: 1vw; */
  }
 
  .grid-item{
-  font-size: 5.5vw;
-  margin: 10px;
+  font-size: 90px;
+  margin: auto;
+ }
+
+ .grid-item i{
+  font-size: 90px;
  }
 
  .grid-item:hover{
@@ -35,12 +38,14 @@ body{
  .info-container{
   margin-top: auto;
   font-size: 5vw;
+  justify-content: center;
+  align-items: center;
   margin-left: 2vw;
   margin-bottom: 1vw;
 }
 
 img{
-  width: 50%;
+  width: 50vw;
   height: auto;
 }
 
@@ -55,15 +60,12 @@ img{
   height: auto;
 }
 
-
-
-#TriedandTrue img{
+/* #TriedandTrue img{
   position: relative;
   left: 10vw;
   width: 60%;
   height: auto;
-
-}
+} */
 
 .text{
   position: fixed;
@@ -79,17 +81,15 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
+
 
 #display{
   cursor: pointer;
 }
 
 .work{
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 2vw;
 }
 
@@ -98,6 +98,52 @@ img{
   height: auto;
 }
 
+
+@media (max-width: 800px){
+ 
+  .grid-item i{
+    font-size: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    display: none;
+  }
+
+  /* .work{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .slideshow{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .mobile-image{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .work img{
+    width: 100%;
+  } */
+
+
+
+
+  
+
+
+
+
+
+}
 
 
 
