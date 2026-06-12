@@ -22,7 +22,7 @@ body{
 
 .work{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr .5fr;
 }
 
 .description{
@@ -61,6 +61,18 @@ img{
   padding: 10px;
   margin: 5px;
   grid-column: 3;
+}
+
+@media (max-width: 800px){
+  .work img{
+    width: 100%;
+    height: auto;
+  }
+
+  .description{
+    display: none;
+  }
+
 }
 
 
