@@ -1,6 +1,76 @@
+
 body{
   background-color: aliceblue;
-  color: rgb(139, 171, 200);
+  color: rgb(57, 57, 196);
+  font-family: "Google Sans Code", monospace;
+}
+
+.info-container{
+  background-color: rgba(206, 221, 255, 0.385);
+}
+
+
+.grid-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px rgb(57, 57, 196) solid;
+  border-top: none;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.work{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.description{
+  grid-column: 2;
+}
+
+.title{
+  text-decoration: none;
+  color: rgb(57, 57, 196);
+}
+
+.title-RTL{
+  grid-column: 2;
+}
+
+.medium{
+  text-align: right;
+}
+
+.slideshow{
+  width: 65vw;
+  height: auto;
+}
+
+
+img{
+  width: 65%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.description{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  grid-column: 3;
+}
+
+
+
+
+
+/* body{
+  background-color: aliceblue;
+  font-family: "Source Serif 4", serif;
+  color: blue;
   font-family: serif;
   display: grid;
   grid-template-rows: 1fr 25vh 1fr;
@@ -12,12 +82,12 @@ body{
  }
 
  .grid-item{
-  font-size: 6vw;
+  font-size: 2vw;
   margin: auto;
  }
 
  .grid-item i{
-  font-size: 6vw;
+  font-size: 2vw;
  }
 
  .grid-item:hover{
@@ -129,4 +199,5 @@ img{
 
 
 
+ */
 

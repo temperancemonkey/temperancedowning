@@ -13,7 +13,7 @@ gridItems.forEach(item => {
         });
 
         content.style.display = 
-            content.style.display === 'block' ? 'none' : 'block';
+            content.style.display === 'none' ? '' : 'none';
     });
 
 });
