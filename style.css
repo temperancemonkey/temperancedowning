@@ -6,9 +6,21 @@ body{
 }
 
 .info-container{
-  background-color: rgba(206, 221, 255, 0.385);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+#contact{
+  text-align: right;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 99vh;
+  justify-content: flex-end;
+}
 
 .grid-item{
   display: grid;
@@ -64,6 +76,16 @@ img{
 }
 
 @media (max-width: 800px){
+  
+  #about{
+    grid-row: 2;
+  }
+
+  #contact{
+    grid-row: 3;
+  }
+  
+  
   .work img{
     width: 100%;
     height: auto;
