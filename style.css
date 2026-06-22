@@ -3,6 +3,7 @@ body{
   background-color: aliceblue;
   color: rgb(57, 57, 196);
   font-family: "Google Sans Code", monospace;
+  cursor: help;
 }
 
 .info-container{
@@ -14,8 +15,6 @@ body{
 
 #contact{
   text-align: right;
-
-
 }
 
 .container{
