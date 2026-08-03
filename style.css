@@ -1,8 +1,7 @@
 
 body{
-  background-color: aliceblue;
-  color: rgb(57, 57, 196);
-  font-family: "Google Sans Code", monospace;
+  /* font-family: "Google Sans Code", monospace; */
+  font-family: sans-serif;
   cursor: help;
 }
 
@@ -28,7 +27,7 @@ body{
 .grid-item{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px rgb(57, 57, 196) solid;
+  border: 1px rgb(0, 0, 0) solid;
   border-top: none;
   margin: 10px;
   padding: 10px;
@@ -46,7 +45,6 @@ body{
 
 .title{
   text-decoration: none;
-  color: rgb(57, 57, 196);
 }
 
 .title-RTL{
@@ -76,7 +74,7 @@ img{
   padding: 10px;
   margin: 5px;
   grid-column: 3;
-  border-left: 1px rgb(57, 57, 196) solid;
+  border-left: 1px rgb(0, 0, 0) solid;
 }
 
 @media (max-width: 800px){
