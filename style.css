@@ -85,10 +85,6 @@ img{
   #header{
     grid-column: 2;
   }
-  
-  #about{
-    display: none;
-  }
 
   #previewImg{
     display: none;
@@ -101,15 +97,12 @@ img{
     grid-column: 2;
   }
   
-  
   .work img{
     width: 100%;
     height: auto;
   }
 
-  .description{
-    display: none;
-  }
+
 
 }
 
