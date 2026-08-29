@@ -55,17 +55,18 @@ img{
 .work{
   display: inline-flex;
   overflow-x: scroll;
+  width: 100%;
+  height: auto;
 }
 
 
-
 #DissentingTypography{
-  width: 150%;
+  width: 110%;
   height: auto;
 }
 
 #Pictotype{
-  width: 150%;
+  width: 110%;
   height: auto;
 }
 
