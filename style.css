@@ -86,6 +86,10 @@ img{
     grid-column: 2;
   }
 
+  #about{
+    display: none;
+  }
+
   #previewImg{
     display: none;
   }
