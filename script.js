@@ -21,31 +21,31 @@ gridItems.forEach(item => {
 
 // WORK SLIDESHOWS
 
-const imgElements = document.querySelectorAll('.display');
+// const imgElements = document.querySelectorAll('.display');
 
-imgElements.forEach((imgElement) => {
+// imgElements.forEach((imgElement) => {
 
-    const images = imgElement.dataset.images.split(',').map(s => s.trim());
+//     const images = imgElement.dataset.images.split(',').map(s => s.trim());
 
-    let currentIndex = 0;
+//     let currentIndex = 0;
 
-    function updateImage() {
-        imgElement.src = images[currentIndex];
-    }
+//     function updateImage() {
+//         imgElement.src = images[currentIndex];
+//     }
 
-    imgElement.addEventListener("click", (e) => {
-        const rect = imgElement.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
+//     imgElement.addEventListener("click", (e) => {
+//         const rect = imgElement.getBoundingClientRect();
+//         const clickX = e.clientX - rect.left;
     
-        if (clickX < rect.width / 2) {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-        } else {
-            currentIndex = (currentIndex + 1) % images.length;
-        }
+//         if (clickX < rect.width / 2) {
+//             currentIndex = (currentIndex - 1 + images.length) % images.length;
+//         } else {
+//             currentIndex = (currentIndex + 1) % images.length;
+//         }
     
-        updateImage();
-    });
-});
+//         updateImage();
+//     });
+// });
 
 
 
