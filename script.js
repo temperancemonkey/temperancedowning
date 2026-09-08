@@ -19,6 +19,8 @@ gridItems.forEach(item => {
 });
 
 
+
+
 // WORK SLIDESHOWS
 
 // const imgElements = document.querySelectorAll('.display');
