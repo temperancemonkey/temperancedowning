@@ -29,6 +29,7 @@ a:hover{
   display: flex;
   position: relative;
   flex-direction: column;
+  margin-top: 20vw;
 
   min-height: 99vh;
   justify-content: flex-end;
