@@ -3,6 +3,10 @@ body{
   overflow-x: hidden;
 }
 
+#about{
+  text-align: center;
+}
+
 .info-container{
   display: grid;
   margin: 10px;
