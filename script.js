@@ -62,7 +62,7 @@ function addStamp(event) {
     // stamp.src = stampIndex;
 
     stamp.src = stamps[stampIndex];
-    stamp.style.width = 'clamp(80px, 18vw, 250px)';
+    stamp.style.width = 'clamp(150px, 18vw, 250px)';
     stamp.style.height = 'auto';
     stamp.style.position = 'absolute';
     stamp.style.left = `${mouseX}px`; 
