@@ -52,7 +52,7 @@ body{
   white-space: pre;
   text-align: center;
   filter: url(#distort);
-  font-size: .8vw;
+  font-size: 1vw;
 }
 
 
