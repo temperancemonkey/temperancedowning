@@ -15,6 +15,13 @@ body{
 
 }
 
+@font-face {
+  font-family: 'Wares';
+  src: url('hardware-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
 
 
 .work{
@@ -62,7 +69,21 @@ img{
   height: auto;
 }
 
-
+#typeface{
+  font-size: 20vw;
+  width: 200%;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+  height: auto;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  margin: 0;
+  padding-top: 0.1em;
+  padding-bottom: 0.5em;
+  font-family: 'Wares';
+  scrollbar-width: none;
+}
 
 
 /* a{
