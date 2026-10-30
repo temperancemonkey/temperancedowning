@@ -15,50 +15,37 @@ body{
 
 }
 
-/* .info-container{
-  position: absolute;
-  display: grid;
-  margin: 10px;
-  padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
 
-  filter: url(#distort);
-}
-
-#contact {
-
-  text-align: right;
-
-} */
 
 .work{
-  width: 75%;
+  width: 70vw;
   height: auto;
 }
 
 #name{
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 .info{
   filter: url(#distort);
-  white-space: pre;
-  font-size: .8vw;
+  font-size: 1vw;
 
   width: 100%;
   height: auto;
   text-align: center;
+  margin: 50px 0;
 
 }
 
 .desc{
-  white-space: pre;
 
-  font-size: .8vw;
+  line-height: 30%;
+  font-size: 1vw;
   width: 100%;
   height: auto;
   text-align: center;
   filter: url(#distort);
+  margin: 50px 0;
 }
 
 .select{
