@@ -261,5 +261,34 @@ body{
 }
 
 
+@media (max-width: 800px) {
+
+  .info{
+    text-align: center;
+
+  }
+
+  .work{
+    text-align: center;
+  }
+
+  #pieces{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin-top: auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -5;
+  }
+
+
+}
+
+
 
 
