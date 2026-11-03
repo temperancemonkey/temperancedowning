@@ -49,39 +49,50 @@
 //     });
 // });
 
-let stamps = ['/stamps/001.png', '/stamps/002.png', '/stamps/003.png'];
+// let stamps = ['/stamps/001.png', '/stamps/002.png', '/stamps/003.png'];
 
-function addStamp(event) {
+// function addStamp(event) {
 
-    const mouseX = event.pageX;
-    const mouseY = event.pageY;
-    const randomRotation = Math.random() * 360;
-    const stampIndex = Math.floor(Math.random() * stamps.length);
+//     const mouseX = event.pageX;
+//     const mouseY = event.pageY;
+//     const randomRotation = Math.random() * 360;
+//     const stampIndex = Math.floor(Math.random() * stamps.length);
 
-    const stamp = document.createElement('img');
-    // stamp.src = stampIndex;
+//     const stamp = document.createElement('img');
+//     // stamp.src = stampIndex;
 
-    stamp.src = stamps[stampIndex];
-    stamp.style.width = 'clamp(150px, 18vw, 250px)';
-    stamp.style.height = 'auto';
-    stamp.style.position = 'absolute';
-    stamp.style.left = `${mouseX}px`; 
-    stamp.style.top = `${mouseY}px`;
-    stamp.style.transform = `translate(-50%, -50%) rotate(${randomRotation}deg)`; 
-    stamp.style.pointerEvents = 'none'; 
-    stamp.style.userSelect = 'none';
-    stamp.style.filter = 'url(#distort)';
-
-
-    document.body.append(stamp);
-
-}
-
-document.addEventListener('click', addStamp);
+//     stamp.src = stamps[stampIndex];
+//     stamp.style.width = 'clamp(150px, 18vw, 250px)';
+//     stamp.style.height = 'auto';
+//     stamp.style.position = 'absolute';
+//     stamp.style.left = `${mouseX}px`; 
+//     stamp.style.top = `${mouseY}px`;
+//     stamp.style.transform = `translate(-50%, -50%) rotate(${randomRotation}deg)`; 
+//     stamp.style.pointerEvents = 'none'; 
+//     stamp.style.userSelect = 'none';
+//     stamp.style.filter = 'url(#distort)';
 
 
+//     document.body.append(stamp);
+
+// }
+
+// document.addEventListener('click', addStamp);
 
 
+const topics = document.querySelectorAll('.item');
+const pieces = document.querySelector('#pieces');
+
+topics.forEach(topic => {
+    topic.addEventListener('mouseover', function() {
+        pieces.src = this.dataset.image;
+        pieces.style.display = 'block';
+    });
+
+    topic.addEventListener('mouseout', function() {
+        pieces.style.display = 'none';
+    });
+});
 
 
 
