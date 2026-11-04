@@ -253,6 +253,7 @@ body{
   text-indent: 20px;
 }
 
+
 #pieces{
   margin-left: 0;
   position: fixed;
@@ -262,10 +263,22 @@ body{
 }
 
 
+
+
+
 @media (max-width: 800px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 
   .info{
     text-align: center;
+
 
   }
 
