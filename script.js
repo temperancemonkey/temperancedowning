@@ -130,10 +130,10 @@ function addEl(ourRotation, label) {
     ticks.style.left = '50%';
     ticks.style.top = '50%';
 
-    ticks.style.width = '35px';
+    ticks.style.width = '100px';
     ticks.style.height = '1px';
     ticks.style.backgroundColor = '#9b0058';
-    ticks.style.transform = `translate(-50%, -50%) rotate(${ourRotation}deg) translate(500px)`;
+    ticks.style.transform = `translate(-50%, -50%) rotate(${ourRotation}deg) translate(400px)`;
 
 
     clock.append(ticks);

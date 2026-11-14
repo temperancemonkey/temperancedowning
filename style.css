@@ -18,9 +18,9 @@ body{
 
   #clock{
     position: fixed;
-    left: -35%;
-    width: 950px;
-    height: 950px;
+    left: -30%;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
 
     animation: rotate 180s ease infinite;
