@@ -132,7 +132,7 @@ function addEl(ourRotation, label) {
 
     ticks.style.width = '35px';
     ticks.style.height = '1px';
-    ticks.style.backgroundColor = 'blue';
+    ticks.style.backgroundColor = '#9b0058';
     ticks.style.transform = `translate(-50%, -50%) rotate(${ourRotation}deg) translate(500px)`;
 
 
