@@ -130,8 +130,9 @@ function addEl(ourRotation, label) {
     ticks.style.left = '50%';
     ticks.style.top = '50%';
 
-    ticks.style.width = '100px';
+    ticks.style.width = '500px';
     ticks.style.height = '1px';
+    ticks.style.opacity = '20%';
     ticks.style.backgroundColor = '#9b0058';
     ticks.style.transform = `translate(-50%, -50%) rotate(${ourRotation}deg) translate(400px)`;
 
@@ -142,9 +143,9 @@ function addEl(ourRotation, label) {
 }
 
 
-for (let i = 0; i < 24; i = i + 1) {
+for (let i = 0; i < 16; i = i + 1) {
 
-    addEl (i * 360/24);
+    addEl (i * 360/16);
 
 }
 
