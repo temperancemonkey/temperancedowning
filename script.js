@@ -114,6 +114,42 @@ function checkTime(i) {
     return i;
 }
 
+// TICKS
+
+
+
+const clock = document.getElementById('clock');
+
+
+function addEl(ourRotation, label) {
+
+    const ticks = document.createElement('div');
+
+    ticks.style.position = 'absolute';
+    ticks.style.margin = '0';
+    ticks.style.left = '50%';
+    ticks.style.top = '50%';
+
+    ticks.style.width = '35px';
+    ticks.style.height = '1px';
+    ticks.style.backgroundColor = 'blue';
+    ticks.style.transform = `translate(-50%, -50%) rotate(${ourRotation}deg) translate(500px)`;
+
+
+    clock.append(ticks);
+
+
+}
+
+
+for (let i = 0; i < 24; i = i + 1) {
+
+    addEl (i * 360/24);
+
+}
+
+
+
 
 
 
