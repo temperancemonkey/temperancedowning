@@ -130,7 +130,7 @@ function addEl(ourRotation, label) {
     ticks.style.left = '50%';
     ticks.style.top = '50%';
 
-    ticks.style.width = '500px';
+    ticks.style.width = '300px';
     ticks.style.height = '1px';
     ticks.style.opacity = '20%';
     ticks.style.backgroundColor = '#9b0058';
