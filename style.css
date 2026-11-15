@@ -46,6 +46,11 @@ a{
   color: #9b0058;
 }
 
+a:hover{
+  font-style: italic;
+  color: white;
+}
+
 .item:hover{
   color: white;
   font-style: italic;
